@@ -29,14 +29,14 @@ Make changes, additions etc in your local repo remembering to stage and commit a
 ### 5. Pushing 
 
 After you have made your changes to the cloned repo, you want to push them to your remote repo, your GitHub account. This is achieved through the: `git push origin master` command.
-    *`origin` is shorthand for the URL of your default remote repo. This can be many different URLs depending on the project. The origin can be set and unset. 
-    * `master` refers to the central `branch` of your repository. Branches are exactly what they sound like. Separate arms of the same tree of code that *branch* out and try new ideas. This is often used for feature testing. When you're happy with the finished product, you then `merge` this branch back with the `master` branch. 
+
+* `origin` is shorthand for the URL of your default remote repo. This can be many different URLs depending on the project. The origin can be set and unset. 
+
+* `master` refers to the central `branch` of your repository. Branches are exactly what they sound like. Separate arms of the same tree of code that *branch* out and try new ideas. This is often used for feature testing. When you're happy with the finished product, you then `merge` this branch back with the `master` branch. 
     
-    Bear in mind, as of writing this, Github has moved to rename the default branch from `master` to `main` to remove unnecessary references to slavery for a more inclusive approach.
+Bear in mind, as of writing this, Github has moved to rename the default branch from `master` to `main` to remove unnecessary references to slavery for a more inclusive approach.
 
 
 ### 6. Pull request
 
 As your local and remote repos are up-to-date on all your changes. It's time to see if the OG repo owner wants your code. 
-
-push your new repo code back to the original forked repo. 
