@@ -40,21 +40,24 @@ Remember `mike`? He is a variable that we could go back to, manipulate and add t
 
 You can declare variables one of two ways: 
 
-1. The `const` keyword
-   `const` represents constant and should be used for variables that you want to access globally and intend to reference more than once. An example being:
+1. **The ```const``` keyword**
+
+`const` represents constant and should be used for variables that you want to access globally and intend to reference more than once. An example being:
 
    `const age = 25;` 
 
 2. The `let` keyword
-   `let` is a more temporary and flexible approach to defining variables as the variable can be constantly redefined throughout a file or function. This can be very useful in multiple situations. In the example below, the final age will be 22. 
+`let` is a more temporary and flexible approach to defining variables as the variable can be constantly redefined throughout a file or function. This can be very useful in multiple situations. In the example below, the final age will be 22. 
 
    ```javascript
    let age = 25;
    age = 20;
    age = 22;
    ```
+
 3. The `var` keyword
-   this is an ES5 remnant and is rarely used due   to its flexibility within the global and function scope. It's easier to change the value of `var` than the more scope specific ES6 variants, `let` and `const`. Basically, don't use `var` anymore. If you want more info, [this is a good article.](https://levelup.gitconnected.com/stop-using-var-to-declare-variables-in-javascript-6c0caec16f43)
+
+`var` is an ES5 remnant and is rarely used due to its flexibility within the global and function scope. It's easier to change the value of `var` than the more scope specific ES6 variants, `let` and `const` and expose client side code to more security risks. Basically, don't use `var` anymore. If you want more info, [this is a good article.](https://levelup.gitconnected.com/stop-using-var-to-declare-variables-in-javascript-6c0caec16f43)
 
 
 ## console.log();
@@ -68,7 +71,7 @@ console.log(age);
 >25
 ```
 
-There are multiple other methods attached to the `console` object such as `.error` and `.warning`. [Check the MDN for more info.](https://developer.mozilla.org/en-US/docs/Web/API/console)
+There are multiple other methods attached to the `console` object such as `.error();` and `.warning();`. [Check the MDN for more info.](https://developer.mozilla.org/en-US/docs/Web/API/console)
 
 
 ## Data Types
@@ -97,10 +100,9 @@ True or false; booleans represent true or false statements. True, of course. In 
 let theSkyIsBlue = true;
 ```
 
-
 ### Reference 
 
-4. Arrays
+4. **Arrays**
 An array in Javascript is a collection or list of multiple primitive values stored under a single variable. Much like the numbers 1, 2 and 3 are related, so are `blue`, `green` and `yellow` as colours. So they must be in an array. Arrays are defined just like a normal variable, inside the `[]` with values declared with their respective syntax. 
 
 ```javascript
@@ -115,11 +117,12 @@ Let's get the first colour of `colours`
 
 ```javascript
 colours[0];
-```` 
+```
 
 The third number of `numbers`
+
 ```javascript
-`numbers[2];`
+numbers[2];
 ```
 
 This works the same way if you want to update that same array element to something else. I.e: 
@@ -128,13 +131,13 @@ This works the same way if you want to update that same array element to somethi
 
 ### Common Array Properties
 
-* `.length()` This tells us how many elements are within an array.
-* `.push()` Adds a new item to the end of an array.
-* `.pop()` Removes the last item from an array. 
-* `.shift()` Similar to `.pop()` but it removes the **first** element from the array and shifts the indicies downward. 
-* `.unshift()` Adds an item to the **start** of an array
-* `.join()` Adds all array elements into a string and can pass in whatever seperator you want into the method.
-* `.splice()` cut into the array into a specific index range and removes those elements and replaces with specific values. Eg:
+* `.length()`: This tells us how many elements are within an array.
+* `.push()`: Adds a new item to the end of an array.
+* `.pop()`: Removes the last item from an array. 
+* `.shift()`: Similar to `.pop()` but it removes the **first** element from the array and shifts the indicies downward. 
+* `.unshift()`: Adds an item to the **start** of an array
+* `.join()`: Adds all array elements into a string and can pass in whatever seperator you want into the method.
+* `.splice()`: cut into the array into a specific index range and removes those elements and replaces with specific values. Eg:
    ```javascript
    let fruits = ["Banana", "Orange", "Apple", "Mango"];
    fruits.splice(2, 0, "Lemon", "Kiwi");
@@ -142,7 +145,7 @@ This works the same way if you want to update that same array element to somethi
 
 5. Objects 
 
-   The mightiest and most intimidating 
+The mightiest and most intimidating of all data types in JavaScript, an object is just what it sounds like. 
 
 
 
