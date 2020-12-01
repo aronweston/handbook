@@ -40,13 +40,14 @@ Remember `mike`? He is a variable that we could go back to, manipulate and add t
 
 You can declare variables one of two ways: 
 
-1. **The ```const``` keyword**
+### The ```const``` keyword
 
 `const` represents constant and should be used for variables that you want to access globally and intend to reference more than once. An example being:
 
    `const age = 25;` 
 
-2. The `let` keyword
+### The `let` keyword
+
 `let` is a more temporary and flexible approach to defining variables as the variable can be constantly redefined throughout a file or function. This can be very useful in multiple situations. In the example below, the final age will be 22. 
 
    ```javascript
@@ -55,7 +56,7 @@ You can declare variables one of two ways:
    age = 22;
    ```
 
-3. The `var` keyword
+### The `var` keyword
 
 `var` is an ES5 remnant and is rarely used due to its flexibility within the global and function scope. It's easier to change the value of `var` than the more scope specific ES6 variants, `let` and `const` and expose client side code to more security risks. Basically, don't use `var` anymore. If you want more info, [this is a good article.](https://levelup.gitconnected.com/stop-using-var-to-declare-variables-in-javascript-6c0caec16f43)
 
@@ -78,21 +79,23 @@ There are multiple other methods attached to the `console` object such as `.erro
 
 Remember how I said that variables can hold anything you want, I wasn't lying. Just in the JavaScript world, they can only hold a handful of things, but those things can be very small or very large. 
 
-There are 5 main data types in JavaScript split into two main categories; primitive and reference data types. 
+Data types in JavaScript are split into two main categories; **primitive** and **reference** data types. 
 
-### Primitive
+## Primitive
 
-1. Numbers (integers)
+### Numbers (integers)
+
 Simple enough, by declaring `const num = 1;` We can use this number throughout our programming. 
 
-2. Strings 
+### Strings 
+
 These are sets of characters that are side-by-side in a line with a few space characters. Kind of like a *string*. Don't get it tangled though, numbers can also be in strings and strings can be converted to numbers. It really is a wonderful world. Make sure that you open and close your string with `''` or `""`. It doesn't matter which one you chose, just be consistent. 
 
 ```javascript
 let stringy = "A random alignment of various characters to make a string";
 ```
 
-3. Booleans
+### Booleans
 
 True or false; booleans represent true or false statements. True, of course. In binary the result is a `0` for false, and a `1` for true. 
 
@@ -100,9 +103,9 @@ True or false; booleans represent true or false statements. True, of course. In 
 let theSkyIsBlue = true;
 ```
 
-### Reference 
+## Reference 
 
-4. **Arrays**
+### Arrays
 An array in Javascript is a collection or list of multiple primitive values stored under a single variable. Much like the numbers 1, 2 and 3 are related, so are `blue`, `green` and `yellow` as colours. So they must be in an array. Arrays are defined just like a normal variable, inside the `[]` with values declared with their respective syntax. 
 
 ```javascript
@@ -129,21 +132,22 @@ This works the same way if you want to update that same array element to somethi
 
 `colours[0]` to `colours[0] = "red";` to change the first element to red. 
 
-### Common Array Properties
+#### Common Array Properties
 
 * `.length()`: This tells us how many elements are within an array.
 * `.push()`: Adds a new item to the end of an array.
 * `.pop()`: Removes the last item from an array. 
 * `.shift()`: Similar to `.pop()` but it removes the **first** element from the array and shifts the indicies downward. 
 * `.unshift()`: Adds an item to the **start** of an array
-* `.join()`: Adds all array elements into a string and can pass in whatever seperator you want into the method.
+* `.join()`: Adds all array elements into a string and can pass in whatever separator you want into the method.
 * `.splice()`: cut into the array into a specific index range and removes those elements and replaces with specific values. Eg:
+
    ```javascript
    let fruits = ["Banana", "Orange", "Apple", "Mango"];
    fruits.splice(2, 0, "Lemon", "Kiwi");
    ```
 
-5. Objects 
+### Objects 
 
 The mightiest and most intimidating of all data types in JavaScript, an object is just what it sounds like. 
 
