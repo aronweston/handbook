@@ -44,13 +44,15 @@ You can declare variables one of two ways:
 
 `const` represents constant and should be used for variables that you want to access globally and intend to reference more than once. An example being:
 
-   `const age = 25;` 
+   ```js
+   const age = 25;
+   ``` 
 
 ### The `let` keyword
 
 `let` is a more temporary and flexible approach to defining variables as the variable can be constantly redefined throughout a file or function. This can be very useful in multiple situations. In the example below, the final age will be 22. 
 
-   ```javascript
+   ```js
    let age = 25;
    age = 20;
    age = 22;
@@ -85,7 +87,11 @@ Data types in JavaScript are split into two main categories; **primitive** and *
 
 ### Numbers (integers)
 
-Simple enough, by declaring `const num = 1;` We can use this number throughout our programming. 
+Simple enough, by declaring: 
+```js 
+const num = 1;
+``` 
+We can use this number throughout our programming.
 
 ### Strings 
 
@@ -149,7 +155,49 @@ This works the same way if you want to update that same array element to somethi
 
 ### Objects 
 
-The mightiest and most intimidating of all data types in JavaScript, an object is just what it sounds like. 
+The mightiest and most intimidating of all data types in JavaScript, an object is just what it sounds like. An object is a container of multiple properties that make it up. The car example has been used a lot in describing an object.
+
+A car has a motor, a certain amount of KM's, a colour, 4 tyres and drives. Let's translate that into an object
+
+```js 
+
+const car = {
+   motor: "v6",
+   kilometres: 200000,
+   color: "black",
+   tyres: ["front left", "front right", "rear left", "rear right"],
+   drive: function () {
+      car.go();
+   }
+}
+```
+
+This car object has 5 properties that now make it up. The data that is associated with these properties are called **values**. 
+
+You can access objects in a similar way to arrays. To access each property of the `car` object, we use **dot notation**: 
+
+To get the motor and output to console.
+
+```js 
+console.log(car.motor)
+>v6
+```
+
+To call the `drive` function and make the car go: 
+
+```js
+car.drive();
+```
+
+Much like an array, you can change the value of an object key by targeting the property with dot notation and setting a new value.
+
+```js
+car.motor = "v4";
+console.log(car.motor);
+>v4
+```
+
+
 
 
 
