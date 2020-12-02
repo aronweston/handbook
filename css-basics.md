@@ -168,3 +168,12 @@ Keeping with our previous example, lets set the `h1` to a larger text than its s
 </html>
 ```
 
+## Inline v Block Level Elements
+
+| Block   | Inline  |
+|---|---|
+| Always starts on a new line.  | Sit within the content that surrounds them.  |
+| Take up the full width available on the screen.  | Only take up as much width as necessary.  |
+| Stack on top of each other when new ones are added.  | Render in one line.   |
+| Can have set margins, padding, widths, or heights.  | Cannot have set margins or padding.  |
+| `<h1-6>`, `<div>`, `<p>`, `<ul>`, etc.  | `<a>`, `<span>`, `<img>`, etc.  |
